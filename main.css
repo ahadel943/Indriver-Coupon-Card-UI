@@ -1,0 +1,101 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    border: none;
+}
+
+:root {
+    --light-green: #1ac93d;
+    --datk-green: #139c2e;
+    --blue-shade: #4998d3;
+    --red-shade: #e74225;
+    --grey-shade: #f0fff3;
+    font-size: 10px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--grey-shade);
+    display: grid;
+    place-items: center;
+}
+
+.coupon-card {
+    width: 80%;
+    background: radial-gradient(var(--light-green), var(--datk-green));
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.coupon-card .logo {
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+
+.coupon-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.coupon-card p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.btn-div {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 1rem auto;
+    width: fit-content;
+}
+
+.cpn-code {
+    border: 1px solid #ffffff;
+    padding: 1rem 2rem;
+    border-right: none;
+}
+
+.copy-btn {
+    border: 1px solid #ffffff;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    color: var(--blue-shade);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.copy-btn:hover {
+    color: var(--red-shade);
+}
+
+.cir-1, .cir-2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--grey-shade);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cir-1 {
+    left: -25px;
+}
+
+.cir-2 {
+    right: -25px;
+}
